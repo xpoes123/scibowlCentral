@@ -1,1 +1,0 @@
-Make a website similar to qbreader, include stats as well though
