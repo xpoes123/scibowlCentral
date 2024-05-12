@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SB Central</title>
+        <script src="questions.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="questions.css">
+    </head>
+    <body>
+        <header>
+            <h1><span class="highlight">SB</span><span class = "highlight2">Central</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.sbreader.org/practice">Questions</a></li>
+                    <li><a href="#multiplayer">Multiplayer</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#Stats">Stats</a></li>
+                    <li><a href="tournaments">Tournaments</a></li>
+                    <li><a href="buzzer">Buzzer</a></li>
+                    <li><a href="settings">Settings</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href = "#login">Login</a>
+            </div>
+        </header>
+        <div class="practice-info">
+            <p class="lead">
+                Play quizbowl questions by yourself.
+            </p>
+            <div class="button-container">
+                <a href="#" class="btn" onclick="toggleDropdown('packetDropdown')">Create a Packet</a>
+                <a href="#" class="btn" onclick="toggleDropdown('practiceDropdown')">Practice Yourself</a>
+            </div>
+            <div id="packetDropdown" class="dropdown-content" style="display:none;">
+                <div class="dropdown-container">
+                    <div class="difficulty-dropdown">
+                        <button onclick="toggleDropdownContent('difficulty-buttons')" class="btn">Difficulty</button>
+                        <div id="difficulty-buttons" class="dropdown-content2" style="display:none;">
+                            <a href="#" onclick="setDifficulty('MS'); return false;">MS</a>
+                            <a href="#" onclick="setDifficulty('HS Regs'); return false;">HS Regs</a>
+                            <a href="#" onclick="setDifficulty('HS Nats'); return false;">HS Nats</a>
+                            <a href="#" onclick="setDifficulty('All HS'); return false;">All HS</a>
+                        </div>
+                    </div>
+                    <div class="category-dropdown">
+                        <button onclick="toggleDropdownContent('category-buttons')" class="btn">Category</button>
+                        <div id="category-buttons" class="dropdown-content2" style="display:none;">
+                            <a href="#" onclick="setCategory('B'); return false;">Biology</a>
+                            <a href="#" onclick="setCategory('C'); return false;">Chemistry</a>
+                            <a href="#" onclick="setCategory('ES'); return false;">Earth and Space</a>
+                            <a href="#" onclick="setCategory('E'); return false;">Energy</a>
+                            <a href="#" onclick="setCategory('P'); return false;">Phyiscs</a>
+                            <a href="#" onclick="setCategory('M'); return false;">Math</a>
+                        </div> 
+                    </div>
+                </div>
+                
+        </div>
+        
+        <div id="practiceDropdown" class="dropdown-content" style="display:none;">
+            <p>TO BE CREATED</p>
+        </div>
+    </div>
+
+
+    </body>
+    </html>
