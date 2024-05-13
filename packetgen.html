@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB Central</title>
+    <script src="packetgen.js"></script>
+    <link rel="stylesheet" href="../davidjiang/cs/project/sbdb/styles.css">
+    <link rel="stylesheet" href="packetgen.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html"><span class="highlight">SB</span><span class="highlight2">Central</span></a></h1>
+        <nav>
+            <ul>
+                <li class="header-dropdown">
+                    <a href="/scibowlCentral/questions.html">Questions</a>
+                    <div class="header-dropdown-content">
+                        <a href="Questions/PacketGen/packetgen.html">Generate Packet</a>
+                        <a href="#link2">Study Questions</a>
+                        <a href="#link2">Database</a>
+                        <a href="#link2">Submit Questions</a>
+                        <a href="#link2">Submit Answers</a>
+                        <a href="#link2">Test Questions</a>
+                    </div>
+                </li>
+                <li class="header-dropdown">
+                    <a href="#multiplayer">Multiplayer</a>
+                    <div class="header-dropdown-content">
+                        <a href="#multi1">Protobowl</a>
+                        <a href="#multi2">Ranked</a>
+                    </div>
+                </li>
+                <li class="header-dropdown">
+                    <a href="#resources">Resources</a>
+                    <div class="header-dropdown-content">
+                        <a href="/Resources/textbooks.html">Textbooks</a>
+                        <a href="#resource2">Guides</a>
+                    </div>
+                </li>
+                <li class="header-dropdown">
+                    <a href="#resources">Stats</a>
+                    <div class="header-dropdown-content">
+                        <a href="#resource1">Elo Stuff</a>
+                        <a href="#resource2">SBCentral Leaderboard</a>
+                    </div>
+                </li>
+                <li class="header-dropdown">
+                    <a href="#resources">Tournaments</a>
+                    <div class="header-dropdown-content">
+                        <a href="#resource1">Upcoming Tournaments</a>
+                        <a href="#resource2">Past Tournaments</a>
+                    </div>
+                </li>
+                <li class="header-dropdown">
+                    <a href="#resources">Buzzer</a>
+                    <div class="header-dropdown-content">
+                        <a href="#resource1">Join Room</a>
+                        <a href="#resource2">Create Room</a>
+                    </div>
+                </li>
+                <li class="header-dropdown">
+                    <a href="#resources">Settings</a>
+                    <div class="header-dropdown-content">
+                        <a href="#resource1">Site Settings</a>
+                        <a href="#resource2">My Account</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="#login">Login</a>
+        </div>
+    </header>
+    <div class="practice-info">
+        <h3 class="lead">
+            Create a randomly generated packet for practice
+        </h3>
+            <div class="dropdown-container">
+                <div class="difficulty-dropdown">
+                    <button onclick="toggleDropdownContent('difficulty-buttons')" class="btn">Difficulty</button>
+                    <div id="difficulty-buttons" class="dropdown-content2" style="display:none;">
+                        <a href="#" onclick="setDifficulty('MS', this); return false;">MS</a>
+                        <a href="#" onclick="setDifficulty('HS Regs', this); return false;">HS Regs</a>
+                        <a href="#" onclick="setDifficulty('HS Nats', this); return false;">HS Nats</a>
+                        <a href="#" onclick="setDifficulty('All HS', this); return false;">All HS</a>
+                </div>
+                <div class="category-dropdown">
+                    <button onclick="toggleDropdownContent('category-buttons')" class="btn">Category</button>
+                    <div id="category-buttons" class="dropdown-content2" style="display:none;">
+                        <a href="#" onclick="setCategory('B', this); return false;">Biology</a>
+                        <a href="#" onclick="setCategory('C', this); return false;">Chemistry</a>
+                        <a href="#" onclick="setCategory('ES', this); return false;">Earth and Space</a>
+                        <a href="#" onclick="setCategory('E', this); return false;">Energy</a>
+                        <a href="#" onclick="setCategory('P', this); return false;">Physics</a>
+                        <a href="#" onclick="setCategory('M', this); return false;">Math</a>
+                        <a href="#" onclick="setCategory('A', this); return false;">All</a>
+                    </div> 
+            </div>
+    <div id="practiceDropdown" class="dropdown-content" style="display:none;">
+        <p>TO BE CREATED</p>
+    </div>
+</div>
+
+
+</body>
+</html>

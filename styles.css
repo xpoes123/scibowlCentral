@@ -28,7 +28,6 @@ nav {
     flex-grow: 2;
 }
 
-/* Applies styles to the navigation ul to remove list-style (bullets) */
 nav ul {
     list-style-type: none;
     display: flex;
@@ -71,7 +70,7 @@ h3 {
 }
 
 .highlight {
-    color: #044b93; /* Example blue color */
+    color: #044b93;
 }
 
 .highlight2 {
@@ -96,17 +95,51 @@ p {
 
 a {
     color: #044b93;
-    text-decoration: none; /* Removes underline */
+    text-decoration: none;
 }
 
-/* General ul styles, does not affect nav ul */
 ul {
-    color: #cddbe9; /* Changes the text color */
+    color: #cddbe9;
     padding: 10px 20px;
 }
 
-/* Ensures only non-nav ul elements have disc markers inside */
 ul:not(nav ul) li {
     list-style: inside disc;
-    color: #cddbe9 /* This will change the color of the text and the dot */
+    color: #cddbe9;
+}
+
+.header-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3d825d;
+    min-width: 100px;
+    border-radius:5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.header-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.header-dropdown-content a:hover {
+    background-color: #0c6334;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header-dropdown:hover .header-dropdown-content {
+    display: block;
+}
+
+.header-dropdown:hover .header-dropdown {
+    background-color: #3e8e41;
 }

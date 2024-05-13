@@ -5,16 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SB Central</title>
     <link rel="stylesheet" href="styles.css">
+    <script>"indexScript.js"</script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
     <header>
+        <h1><a href="index.html"><span class="highlight">SB</span><span class="highlight2">Central</span></a></h1>
+        <nav>
+            <ul>
+                <li class="header-dropdown">
+                    <a href="">Questions</a>
+                    <div class="header-dropdown-content">
+                        <a href="packetgen.html">Generate Packet</a>
+                        <a href="#link2">Study Questions</a>
+                        <a href="#link2">Database</a>
+                        <a href="#link2">Submit Questions</a>
+                        <a href="#link2">Submit Answers</a>
+                        <a href="#link2">Test Questions</a>
+                    </div>
+                </li>
+                <li class="header-dropdown">
+                    <a href="#multiplayer">Multiplayer</a>
+                    <div class="header-dropdown-content">
+                        <a href="#multi1">Protobowl</a>
+                        <a href="#multi2">Ranked</a>
+                    </div>
+                </li>
+                <li class="header-dropdown">
+                    <a href="#resources">Resources</a>
+                    <div class="header-dropdown-content">
+                        <a href="textbooks.html">Textbooks</a>
+                        <a href="#resource2">Guides</a>
+                    </div>
+                </li>
+                <li class="header-dropdown">
+                    <a href="#resources">Stats</a>
+                    <div class="header-dropdown-content">
+                        <a href="#resource1">Elo Stuff</a>
+                        <a href="#resource2">SBCentral Leaderboard</a>
+                    </div>
+                </li>
+                <li class="header-dropdown">
+                    <a href="#resources">Tournaments</a>
+                    <div class="header-dropdown-content">
+                        <a href="#resource1">Upcoming Tournaments</a>
+                        <a href="#resource2">Past Tournaments</a>
+                    </div>
+                </li>
+                <li class="header-dropdown">
+                    <a href="#resources">Buzzer</a>
+                    <div class="header-dropdown-content">
+                        <a href="#resource1">Join Room</a>
+                        <a href="#resource2">Create Room</a>
+                    </div>
+                </li>
+                <li class="header-dropdown">
+                    <a href="#resources">Settings</a>
+                    <div class="header-dropdown-content">
+                        <a href="#resource1">Site Settings</a>
+                        <a href="#resource2">My Account</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="#login">Login</a>
+        </div>
+    </header>
+    
+
+    <!-- <header>
         <h1><span class="highlight">SB</span><span class = "highlight2">Central</span></h1>
         <nav>
             <ul>
                 <li><a href="/scibowlCentral/questions.html">Questions</a></li>
                 <li><a href="#multiplayer">Multiplayer</a></li>
-                <li><a href="#resources">Resources</a></li>
+                <li><a href="#" class="btn" onclick="toggleDropdown('resourcesDropdown')">Resources</a></li>
                 <li><a href="#Stats">Stats</a></li>
                 <li><a href="#tournaments">Tournaments</a></li>
                 <li><a href="#buzzer">Buzzer</a></li>
@@ -24,7 +90,7 @@
         <div class="login">
             <a href = "#login">Login</a>
         </div>
-    </header>
+    </header> -->
     <div class="home-info">
         <p class="lead">
             Welcome to SB Central<span id="welcome-username"></span>!

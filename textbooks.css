@@ -1,0 +1,63 @@
+.textbook-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.table-with-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+table {
+    border: 1px solid #525151;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    padding: 5px;
+    width: auto;
+}
+
+table th {
+    border: 1px solid #525151;
+    padding: 5px;
+    background: #0c6334;
+    color: #ffffff;
+}
+
+table td {
+    border: 1px solid #525151;
+    text-align: left;
+    padding: 5px;
+    background: #b6d0c2;
+    color: #044b93;
+}
+
+table td p {
+    color: #044b93;
+    text-align: left;
+}
+
+.text-box {
+    padding: 10px;
+    background: #044b93;
+    border: 1px solid #ccc;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+}
+
+img {
+    width: 100px;
+
+}
