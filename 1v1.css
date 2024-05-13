@@ -1,0 +1,253 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #222222;
+}
+
+header {
+    background-color: #b6d0c2;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 24px;
+}
+
+nav {
+    flex-grow: 2;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login a, .login a:visited, .login a:hover, .login a:active {
+    color: #333333;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3d825d;
+    min-width: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.header-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.header-dropdown-content a:hover {
+    background-color: #0c6334;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header-dropdown:hover .header-dropdown-content {
+    display: block;
+}
+
+.header-dropdown:hover .header-dropdown {
+    background-color: #3e8e41;
+}
+
+.highlight {
+    color: #044b93;
+}
+
+.highlight2 {
+    color: #0c6334;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    height: 90vh; /* Adjusted height for viewport height with some top and bottom margins */
+    gap: 5%; /* 10% gap between the two rectangles */
+    box-sizing: border-box; /* Ensures the padding does not add to the width */
+}
+
+.horizontal-rectangle {
+    background-color: #b4c9df;
+    width: 70%;
+    height: 570px;
+    display: flex;
+    flex-direction: row; /* Change to row */
+    flex-wrap: wrap; /* Allow multiple lines */
+    align-items: flex-start;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+    overflow-y: auto;
+}
+
+
+.small-rectangle {
+    background-color: #ffffff;
+    width: 250px;  /* Fixed width */
+    height: 300px; /* Fixed height */
+    padding: 10px;
+    margin: 35px; /* Adjusted margin to ensure boxes just touch each other */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    color: #222;
+    box-sizing: border-box; /* Include padding and border in the box's dimensions */
+    flex-shrink: 0; /* Prevent flexbox from shrinking this item */
+    flex-grow: 0;   /* Prevent flexbox from growing this item */
+    display: block; /* Ensures the element is treated as a block-level element */
+    text-align:center;
+}
+
+.horizontal-rectangle h2 {
+    color: #333; /* Text color */
+    padding: 0; /* No internal padding to ensure it sits flush at the top-left */
+    margin: 0 0 10px 0; /* Only bottom margin to space it from the next elements */
+    width: 100%; /* Ensures it stretches across the container */
+}
+
+.vertical-rectangle {
+    background-color: #3d825d;
+    width: 20%;
+    display: flex;
+    flex-direction: column; /* Ensures contents are aligned vertically in a column */
+    align-items: center; /* Centers contents horizontally */
+    justify-content: flex-start; /* Aligns contents to the top */
+    padding-top: 20px; /* Adds padding at the top for spacing */
+    margin-top: 15px;
+    margin-right: 10px;
+    color: white;
+    border: 2px solid #000;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px lightgreen;
+    height: 100%; /* Ensures the container takes full height */
+}
+
+hr {
+    width: 100%; /* Full width */
+    border: none; /* Remove default border */
+    height: 1px; /* Set a visible height */
+    background-color: #fff; /* Light grey color, make sure it's visible against the container's background */
+    margin: 10px 0; /* Add some vertical space around it */
+}
+
+.rank {
+    width:100px;
+    height:100px;
+}
+
+
+
+.small-rectangle .matchup {
+    margin-bottom: 5px;
+}
+
+.small-rectangle .score {
+    text-align: center; /* Center the text horizontally */
+    font-size: 24px; /* Increase the font size */
+    color: #333; /* Optional: set a suitable text color */
+    font-weight: bold; /* Make the font bold */
+    margin-top: 30px; /* Add some space above the score */
+    margin-bottom: 20px; /* Add some space below the score */
+    width: 100%; /* Ensure the text spans the full width of the container */
+    display: block; /* Ensure the text is treated as a block-level element */
+}
+
+
+img{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    padding:10px
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #044b93;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 16px;
+    margin-top:5px;
+    cursor: pointer;
+    margin-right: 10px; /* Adds space between the buttons */
+    transition: background-color 0.3s;
+    text-align: center; /* Center text inside the button */
+}
+
+.btn:hover {
+    background-color: #03396c;
+}
+
+.vertical-rectangle h3 {
+    text-align: right; /* Right-aligns all <h3> within vertical-rectangle */
+    width: 100%; /* Ensures full width for alignment */
+    margin-right:100px;
+    padding:6px;
+}
+
+.total-elo { color: #8bbef6; } /* Blue */
+.bio-elo { color: #82dc97; } /* Green */
+.chem-elo { color: #d67c85; } /* Red */
+.ess-elo { color: #dcc47b; } /* Yellow */
+.energy-elo { color: #81cad5; } /* Teal */
+.math-elo { color: #c0cdd8; } /* Gray */
+.physics-elo { color: #a4b7cb; } /* Darker Gray */
+.record { color: #ac92d5; } /* Purple */
+
+.spectate-button, .play-button {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center; /* Centers the button vertically */
+    width: 100%; /* Takes the full width of its container */
+}
+
+.play-button {
+    margin-top:30px;
+}
